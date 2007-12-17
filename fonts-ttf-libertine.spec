@@ -10,7 +10,6 @@ Group:		System/Fonts/True type
 License:	GPL+ and OFL
 URL:		http://linuxlibertine.sf.net
 Source:		http://dl.sf.net/linuxlibertine/%{archivename}-%{fver}.tgz
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildArch:	noarch
 BuildRequires:	fontforge
 BuildRequires:	freetype-tools
