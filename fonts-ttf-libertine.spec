@@ -4,7 +4,7 @@
 
 Name:		fonts-ttf-libertine
 Version:	%fver.9
-Release:	%mkrel 1
+Release:	%mkrel 3
 Summary:	Linux Libertine Open Fonts
 Group:		System/Fonts/True type
 License:	GPL+ and OFL
