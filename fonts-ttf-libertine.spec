@@ -60,7 +60,7 @@ fi
 
 %files
 %defattr(644,root,root,755)
-%doc Bugs Readme ChangeLog.txt LICENCE.txt *.pdf
+%doc Bugs Readme ChangeLog.txt LICENCE.txt
 %{fontdir}
 %{_sysconfdir}/X11/fontpath.d/ttf-libertine:pri=50
 
