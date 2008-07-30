@@ -1,4 +1,4 @@
-%define archivename	LinLibertineSRC
+%define archivename	LinLibertineFont
 %define fontdir		%{_datadir}/fonts/ttf/libertine
 %define fver		2.8.14
 
@@ -12,7 +12,6 @@ URL:		http://linuxlibertine.sf.net
 Source:		http://dl.sf.net/linuxlibertine/%{archivename}-%{fver}.tgz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildArch:	noarch
-BuildRequires:	fontforge
 BuildRequires:	freetype-tools
 Requires(post):	fontconfig
 Provides:	linux-libertine-fonts
@@ -29,17 +28,6 @@ proprietary standard fonts.
 
 
 %build
-fontforge -script "-" *.sfd <<EOF
-i = 1
-while ( i < \$argc )
-  Open (\$argv[i], 1)
-  Generate (\$fontname + ".ttf")
-  PrintSetup (5)
-  PrintFont (0, 0, "", \$fontname + "-sample.pdf")
-  Close()
-  i++
-endloop
-EOF
 
 
 %install
