@@ -1,10 +1,10 @@
 %define archivename	LinLibertineSRC
 %define fontdir		%{_datadir}/fonts/ttf/libertine
-%define fver		2.7
+%define fver		2.8.14
 
 Name:		fonts-ttf-libertine
-Version:	%fver.9
-Release:	%mkrel 3
+Version:	2.8.14
+Release:	%mkrel 1
 Summary:	Linux Libertine Open Fonts
 Group:		System/Fonts/True type
 License:	GPL+ and OFL
