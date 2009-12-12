@@ -1,15 +1,14 @@
 %define archivename	LinLibertineFont
 %define fontdir		%{_datadir}/fonts/ttf/libertine
-%define fver		2.8.14
 
 Name:		fonts-ttf-libertine
-Version:	2.8.14
-Release:	%mkrel 2
+Version:	4.4.1
+Release:	%mkrel 1
 Summary:	Linux Libertine Open Fonts
 Group:		System/Fonts/True type
 License:	GPL+ and OFL
 URL:		http://linuxlibertine.sf.net
-Source:		http://dl.sf.net/linuxlibertine/%{archivename}-%{fver}.tgz
+Source:		http://dl.sf.net/linuxlibertine/%{archivename}-%{version}.tgz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildArch:	noarch
 BuildRequires:	freetype-tools
