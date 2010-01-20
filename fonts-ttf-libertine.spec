@@ -3,7 +3,7 @@
 
 Name:		fonts-ttf-libertine
 Version:	4.4.1
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Linux Libertine Open Fonts
 Group:		System/Fonts/True type
 License:	GPL+ and OFL
@@ -12,7 +12,6 @@ Source:		http://dl.sf.net/linuxlibertine/%{archivename}-%{version}.tgz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildArch:	noarch
 BuildRequires:	freetype-tools
-Requires(post):	fontconfig
 Provides:	linux-libertine-fonts
 Obsoletes:	linux-libertine-fonts
 
@@ -41,20 +40,6 @@ ln -s %{fontdir} %{buildroot}%{_sysconfdir}/X11/fontpath.d/ttf-libertine:pri=50
 
 %clean
 rm -rf %{buildroot}
-
-
-%post
-if [ -x %{_bindir}/fc-cache ]; then
-  %{_bindir}/fc-cache %{_datadir}/fonts
-fi
-
-
-%postun
-if [ "$1" = "0" ]; then
-  if [ -x %{_bindir}/fc-cache ]; then
-    %{_bindir}/fc-cache %{_datadir}/fonts
-  fi
-fi
 
 
 %files
