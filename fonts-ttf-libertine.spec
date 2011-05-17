@@ -11,6 +11,7 @@ URL:		http://linuxlibertine.sf.net
 Source:		http://dl.sf.net/linuxlibertine/%{archivename}-%{version}.tgz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildArch:	noarch
+BuildRequires: fontconfig
 BuildRequires:	freetype-tools
 Provides:	linux-libertine-fonts
 Obsoletes:	linux-libertine-fonts
