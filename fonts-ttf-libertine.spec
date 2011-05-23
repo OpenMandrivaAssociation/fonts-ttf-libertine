@@ -1,14 +1,14 @@
-%define archivename	LinLibertineFont
+%define archivename	LinLibertineTTF
 %define fontdir		%{_datadir}/fonts/ttf/libertine
 
 Name:		fonts-ttf-libertine
-Version:	4.4.1
-Release:	%mkrel 4
+Version:	5.0.0
+Release:	%mkrel 1
 Summary:	Linux Libertine Open Fonts
 Group:		System/Fonts/True type
 License:	GPL+ and OFL
 URL:		http://linuxlibertine.sf.net
-Source:		http://dl.sf.net/linuxlibertine/%{archivename}-%{version}.tgz
+Source:		http://dl.sf.net/linuxlibertine/LinLibertineTTF_2011_05_22.tgz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildArch:	noarch
 BuildRequires: fontconfig
@@ -23,10 +23,7 @@ proprietary standard fonts.
 
 
 %prep
-%setup -q -n %{archivename}
-
-
-%build
+%setup -qcn LinLibertineTTF_2011_05_22
 
 
 %install
@@ -45,7 +42,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(644,root,root,755)
-%doc Bugs Readme ChangeLog.txt LICENCE.txt
+%doc *.txt
 %{fontdir}
 %{_sysconfdir}/X11/fontpath.d/ttf-libertine:pri=50
 
