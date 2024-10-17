@@ -8,7 +8,7 @@ Release:	2
 Summary:	Linux Libertine Open Fonts
 Group:		System/Fonts/True type
 License:	GPLv2 and OFL
-URL:		http://linuxlibertine.sf.net
+URL:		https://linuxlibertine.sf.net
 Source0:	http://downloads.sourceforge.net/project/linuxlibertine/linuxlibertine/5.3.0/%{archivename}_%{version}_%{reldate}.tgz
 BuildArch:	noarch
 BuildRequires:	fontconfig
